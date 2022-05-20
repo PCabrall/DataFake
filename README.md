@@ -1,4 +1,4 @@
-# DataFake (Gerador de Dados Validados de Pessoas Fakes)
+# DataFake (Gerador de Dados Validados de Pessoas Fakes)(README em Construção)
 
 
 Biblioteca desenvolvida com o intuito de facilitar testes que utilizam de dados de pessoas 
