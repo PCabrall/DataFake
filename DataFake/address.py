@@ -8,7 +8,7 @@ class Address:
             cursor = connection.cursor()
             cursor.execute(
                 'SELECT c.city, c.uf, c.ddd, p.cep, p.address, p.bairro \
-                    FROM Citys c INNER JOIN Public p WHERE p.id_city = c.id \
+                    FROM Citys c INNER JOIN Public p ON p.id_city = c.id \
                         ORDER BY RANDOM() LIMIT 1')
             for line in cursor.fetchall():
                 self.__city, self.__states, self.__ddd, self.__cep, \
@@ -33,7 +33,29 @@ class Address:
     def district(self):
         return self.__district
 
-    def address(self):
+    def address(self, uf=None):
+        self.__uf = uf
+        if self.__uf is not None:
+            while True:
+                connection = sqlite3.connect(r'C:\DataFake\Data\Address.db')
+                cursor = connection.cursor()
+                cursor.execute(
+                    'SELECT c.city, c.uf, c.ddd, p.cep, p.address, p.bairro \
+                        FROM Citys c INNER JOIN Public p ON p.id_city = c.id \
+                        WHERE c.uf = :cuf ORDER BY RANDOM() LIMIT 1',
+                    {'cuf': self.__uf})
+
+                for line in cursor.fetchall():
+                    self.__city, self.__states, self.__ddd, self.__cep, \
+                        self.__address, self.__district = line
+                cursor.close()
+                connection.close()
+                if self.__address != '':
+                    break
+
+            return f'{self.__address}, {self.__district}, {self.__city}-\
+{self.__states}, CEP: {self.__cep}'
+
         return f'{self.__address}, {self.__district}, {self.__city}-\
 {self.__states}, CEP: {self.__cep}'
 
@@ -42,6 +64,6 @@ class Address:
 
 
 if __name__ == '__main__':
-    while True:
+    for i in range(10):
         a = Address()
         print(a.address())
