@@ -8,8 +8,7 @@ dados separados, como: Nome Completo, Idade, Data de Nascimento, CPF, Endereço 
 ## Funções
 
 ### datafake( ):
-A função datafake() deriva de todas as funções presentes nessa biblioteca. Ela rotorna todos
-os elementos de uma pessoa real.
+A função datafake() deriva de todas as funções presentes nessa biblioteca. Ela rotorna todos os elementos de uma pessoa real. Na função existe um parâmetro datafake(dict=True) que vem como padrão False, retorna um dicionário com todos os valores.
 
 ```python
 from DataFake import datafake
@@ -27,7 +26,8 @@ Telefone: +55 (84) 97454-3087
 E-mail: _hidelfonsolutz@outlook.com.br
 Endereço: Rua Antônio Balbino 117, Centro, Triunfo Potiguar-RN, CEP: 59685970
 ```
-### datafake(dict=True):
+
+Com a função datafake(dict=True) gera um dicionário com: nome, nascimento, idade, CPF, telefone, email e endereco.
 
 ```python
 from DataFake import datafake
