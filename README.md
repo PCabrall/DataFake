@@ -1,4 +1,4 @@
-# DataFake (Gerador de Dados Validados de Pessoas Fakes)(README em Construção)
+# DataFake (Gerador de Dados Validados de Pessoas Fakes)
 
 
 Biblioteca desenvolvida com o intuito de facilitar testes que utilizam de dados de pessoas 
@@ -42,7 +42,7 @@ Output:
 'endereco': 'Rua Antônio Balbino 117, Centro, Triunfo Potiguar-RN, CEP: 59685970'}
 ```
 
-#### fullname( ):
+### fullname( ):
 A função fullname() retorna um Nome Completo de uma pessoa, contendo nomes e
 sobrenomes reais.
 
@@ -82,4 +82,56 @@ print(sobrenome)
 Output:
 ```
 Victória
+```
+### email( ):
+A função email() gerar um e-mail baseado no nome do cidadão.
+
+```python
+from DataFake import email
+
+email = email()
+print(email)
+```
+Output:
+```
+victoriaalice@gmail.com
+```
+### username( ):
+Parecido com todas as outras funções, a função username() retorna um nome de usuário.
+
+```python
+from DataFake import username
+
+username = username()
+print(username)
+```
+Output:
+```
+victoriaalice
+```
+### password( ):
+A função password() retorna uma senha forte com 16 digitos contendo: Numéros, Letras Maiúsculas, Letras Minúsculas e Símbolos.
+
+```python
+from DataFake import password
+
+password = password()
+print(email)
+```
+Output:
+```
+nK.0ZUCEb+7%xr4t
+```
+### phone_number( ):
+A função phone_number() gera um número baseado no estado do cidadão, no formato: +55 (DDD) 9 Digitos.
+
+```python
+from DataFake import phone_number
+
+phone_number = phone_number()
+print(phone_number)
+```
+Output:
+```
++55 (11) 97807-1611
 ```
