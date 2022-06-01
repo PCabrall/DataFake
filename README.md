@@ -135,7 +135,7 @@ Output:
 ```
 +55 (11) 97807-1611
 ```
-### cpf():
+### cpf( ):
 Como a própria função já diz, a função cpf() gera um cpf válido. A função também trás uma parametro de formatação, cpf(formated=True) que por definição é Verdadeiro gerando um CPF formatado como mostra abaixo.
 
 ```python
@@ -161,7 +161,7 @@ Output:
 ```
 73309956300
 ```
-### age():
+### age( ):
 A função age() retorna uma idade randômica entre 18 e 65 anos.
 
 ```python
@@ -174,7 +174,7 @@ Output:
 ```
 30
 ```
-### birth_date():
+### birth_date( ):
 A função birth_date() retorna uma data de nascimento no formato dia/mês/ano.
 
 ```python
@@ -187,7 +187,7 @@ Output:
 ```
 25/01/1992
 ```
-### address():
+### address( ):
 A função address() retorna um endereço real brasileiro, com: Rua, Número, Bairro, Cidade, Estado e CEP
 
 ```python
@@ -200,7 +200,7 @@ Output:
 ```
 Avenida Doutor Enéas Carvalho de Aguiar, 419, Cerqueira César, São Paulo-SP, CEP: 05403906
 ```
-### city():
+### city( ):
 A função city() retorna uma cidade brasileira real aleatória.
 
 ```python
@@ -213,7 +213,7 @@ Output:
 ```
 São Paulo
 ```
-### state():
+### state( ):
 A função state() retorna um Estado brasileiro real aleatório.
 
 ```python
@@ -226,7 +226,7 @@ Output:
 ```
 SP
 ```
-### street():
+### street( ):
 A função street() retorna uma Rua brasileiro real aleatória.
 
 ```python
@@ -239,7 +239,7 @@ Output:
 ```
 Avenida Doutor Enéas Carvalho de Aguiar, 419
 ```
-### cep():
+### cep( ):
 A função cep() retorna um CEP brasileiro.
 
 ```python
@@ -252,7 +252,7 @@ Output:
 ```
 05403906
 ```
-### district():
+### district( ):
 A função district() retorna um bairro real brasileiro.
 
 ```python
