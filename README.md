@@ -102,8 +102,8 @@ Parecido com todas as outras funções, a função username() retorna um nome de
 ```python
 from DataFake import username
 
-username = username()
-print(username)
+usuario = username()
+print(usuario)
 ```
 Output:
 ```
@@ -115,8 +115,8 @@ A função password() retorna uma senha forte com 16 digitos contendo: Numéros,
 ```python
 from DataFake import password
 
-password = password()
-print(password)
+senha = password()
+print(senha)
 ```
 Output:
 ```
@@ -128,8 +128,8 @@ A função phone_number() gera um número baseado no estado do cidadão, no form
 ```python
 from DataFake import phone_number
 
-phone_number = phone_number()
-print(phone_number)
+numero = phone_number()
+print(numero)
 ```
 Output:
 ```
@@ -139,7 +139,7 @@ Output:
 Como a própria função já diz, a função cpf() gera um cpf válido. A função também trás uma parametro de formatação, cpf(formated=True) que por definição é Verdadeiro gerando um CPF formatado como mostra abaixo.
 
 ```python
-from DataFake import phone_number
+from DataFake import cpf
 
 cpf = cpf()
 print(cpf)
@@ -152,7 +152,7 @@ Output:
 Com o parâmetro formated=False ele remove a formatação do CPF como mostra abaixo.
 
 ```python
-from DataFake import phone_number
+from DataFake import cpf
 
 cpf = cpf(formated=False)
 print(cpf)
@@ -160,4 +160,108 @@ print(cpf)
 Output:
 ```
 73309956300
+```
+### age():
+A função age() retorna uma idade randômica entre 18 e 65 anos.
+
+```python
+from DataFake import age
+
+idade = age()
+print(idade)
+```
+Output:
+```
+30
+```
+### birth_date():
+A função birth_date() retorna uma data de nascimento no formato dia/mês/ano.
+
+```python
+from DataFake import birth_date
+
+data_nascimento = birth_date()
+print(data_nascimento)
+```
+Output:
+```
+25/01/1992
+```
+### address():
+A função address() retorna um endereço real brasileiro, com: Rua, Número, Bairro, Cidade, Estado e CEP
+
+```python
+from DataFake import address
+
+endereco = address()
+print(endereco)
+```
+Output:
+```
+Avenida Doutor Enéas Carvalho de Aguiar, 419, Cerqueira César, São Paulo-SP, CEP: 05403906
+```
+### city():
+A função city() retorna uma cidade brasileira real aleatória.
+
+```python
+from DataFake import city
+
+cidade = city()
+print(cidade)
+```
+Output:
+```
+São Paulo
+```
+### state():
+A função state() retorna um Estado brasileiro real aleatório.
+
+```python
+from DataFake import state
+
+estado = state()
+print(estado)
+```
+Output:
+```
+SP
+```
+### street():
+A função street() retorna uma Rua brasileiro real aleatória.
+
+```python
+from DataFake import street
+
+rua = street()
+print(rua)
+```
+Output:
+```
+Avenida Doutor Enéas Carvalho de Aguiar, 419
+```
+### cep():
+A função cep() retorna um CEP brasileiro.
+
+```python
+from DataFake import cep
+
+cep = cep()
+print(cep)
+```
+Output:
+```
+05403906
+```
+### district():
+A função district() retorna um bairro real brasileiro.
+
+```python
+from DataFake import district
+
+bairro = district()
+print(bairro)
+```
+Output:
+```
+Cerqueira César
 ```
