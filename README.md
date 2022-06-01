@@ -116,7 +116,7 @@ A função password() retorna uma senha forte com 16 digitos contendo: Numéros,
 from DataFake import password
 
 password = password()
-print(email)
+print(password)
 ```
 Output:
 ```
@@ -134,4 +134,30 @@ print(phone_number)
 Output:
 ```
 +55 (11) 97807-1611
+```
+### cpf():
+Como a própria função já diz, a função cpf() gera um cpf válido. A função também trás uma parametro de formatação, cpf(formated=True) que por definição é Verdadeiro gerando um CPF formatado como mostra abaixo.
+
+```python
+from DataFake import phone_number
+
+cpf = cpf()
+print(cpf)
+```
+Output:
+```
+733.099.563-00
+```
+
+Com o parâmetro formated=False ele remove a formatação do CPF como mostra abaixo.
+
+```python
+from DataFake import phone_number
+
+cpf = cpf(formated=False)
+print(cpf)
+```
+Output:
+```
+73309956300
 ```
